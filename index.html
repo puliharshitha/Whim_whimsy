@@ -10,9 +10,34 @@
 </head>
 <body>
   <header>
-    <h1 >Whim & Whiskey</h1>
+    <img src="Assests/image copy 2.png"  alt="Logo" class="responsive-img" />
+    <div>
+      <ul class="nav-links">
+        <li><a href="#Story">. Story .</a></li>
+        <li><a href="#Recipes">. Recipes .</a></li>
+        <li><a href="#New_Recipes">. New Recipes .</a></li>
+
+      </ul>
+    </div>
+
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#Story" onclick="toggleMenu()">Story</a></li>
+          <li><a href="#Recipes" onclick="toggleMenu()">Recipes</a></li>
+          <li><a href="#New_Recipes" onclick="toggleMenu()">New_Recipes</a></li>
+        </div>
+      </div>
+    </nav>
 
   </header>
+  <section id="Story">
+
 <div class="image-container">
     <h3> How things goes on  here !</h3>
     <p id = "p_box">Welcome to Whisk & Whimsy, your go-to hub for quick, easy, and delicious recipes! I believe that great food doesn’t 
@@ -27,21 +52,23 @@
         
         Less ingredients, more flavor—let’s cook smarter, not harder!</p>
 
+      </section>
 
         
 
 </div>
 
 
- 
+<section id="Recipes">
   <section id="searchSection">
     <input type="text" id="search" placeholder="Search for ingredients..." />
   </section>
 
   <section id="recipeList">
   </section>
+</section>
 
-  <section id="addRecipeSection">
+  <section id="New_Recipes">
     <h2>Add a New Recipe</h2>
     <form id="addRecipeForm">
       <input type="text" id="dishName" placeholder="Dish Name" required />
@@ -51,6 +78,7 @@
       <button type="submit">Add Recipe</button>
     </form>
   </section>
+</section>
 
   <script src="script.js"></script>
 </body>

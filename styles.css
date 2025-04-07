@@ -25,14 +25,23 @@
 
   
   h1 {
+    font-size: 4rem;
+    text-align: center;
+   
+    
+  }
+
+  h3 {
     font-size: 2rem;
     text-align: center;
+    color: #000000;
+   
     
   }
     
   
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     font-family:  'Kameron';
     letter-spacing: .5px;
@@ -43,11 +52,8 @@
   
   }
   .responsive-img {
-    width: 600px; 
+    width: 50px; 
     height: auto;
-    transition: transform 0.3s ease;
-    margin: 10px;
-    border-radius: 30px;
     align-items: center;
     
   }
